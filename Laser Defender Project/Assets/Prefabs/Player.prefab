@@ -95,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 1
-  health: 400
+  health: 600
   laserPrefab: {fileID: 7140517732943407846, guid: 046378347608b0d41b27754c50a70d54,
     type: 3}
   projectileSpeed: 20
