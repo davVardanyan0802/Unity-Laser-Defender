@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour
 {
-    public void LoadStartScene()
+    public void LoadStartMenu()
     {
-        SceneManager.LoadScene(0);
+      SceneManager.LoadScene("Start Menu");
     }
 
     public void LoadGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(1);
     }
 
     public void LoadGameOver()
