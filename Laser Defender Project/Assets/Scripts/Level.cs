@@ -8,7 +8,7 @@ public class Level : MonoBehaviour
     [SerializeField] float delayInSeconds = 2f;
     public void LoadStartMenu()
     {
-      SceneManager.LoadScene("Start Menu");
+        SceneManager.LoadScene("Start Menu");
     }
 
     public void LoadGame()
@@ -19,15 +19,17 @@ public class Level : MonoBehaviour
     public void LoadGameOver()
     {
         StartCoroutine(WaitAndLoad());
-       
+
     }
 
-    IEnumerator WaitAndLoad(){
+    IEnumerator WaitAndLoad()
+    {
         yield return new WaitForSeconds(delayInSeconds);
-         SceneManager.LoadScene("Game Over");
+        SceneManager.LoadScene("Game Over");
     }
 
-    public void QuitGame(){
+    public void QuitGame()
+    {
         Application.Quit();
     }
 }
