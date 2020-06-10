@@ -113,7 +113,8 @@ public class Player : MonoBehaviour
         AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
     }
 
-    public int GetHealth(){
+    public int GetHealth()
+    {
         return health;
     }
 }

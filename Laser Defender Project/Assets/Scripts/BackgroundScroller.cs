@@ -11,7 +11,7 @@ public class BackgroundScroller : MonoBehaviour
     void Start()
     {
         myMaterial = GetComponent<Renderer>().material;
-        offSet = new Vector2(0f,backgroundScrollSpeed);
+        offSet = new Vector2(0f, backgroundScrollSpeed);
     }
 
     // Update is called once per frame
