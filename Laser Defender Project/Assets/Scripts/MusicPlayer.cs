@@ -10,11 +10,14 @@ public class MusicPlayer : MonoBehaviour
         SetUpSingleton();
     }
 
-    private void SetUpSingleton(){
-        if(FindObjectsOfType(GetType()).Length > 1){
+    private void SetUpSingleton()
+    {
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
             Destroy(gameObject);
         }
-        else{
+        else
+        {
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -22,6 +25,6 @@ public class MusicPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
